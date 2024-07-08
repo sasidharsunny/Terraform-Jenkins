@@ -27,7 +27,7 @@ resource "aws_vpc" "example" {
 resource "aws_subnet" "example" {
   vpc_id            = aws_vpc.example.id
   cidr_block        = "172.16.10.0/24"
-  availability_zone = "ap-south-1a"
+  availability_zone = "us-east-1"
 
   tags = {
     Name = "tf-example"
