@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/sasidharsunny/3-tire-Architecture.git'
+                git branch: 'main', url: 'https://github.com/sasidharsunny/Terraform-Jenkins.git'
             }
         }
         stage('Terraform Init') {
