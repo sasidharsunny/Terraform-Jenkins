@@ -1,7 +1,7 @@
 #This Terraform Code Deploys Basic VPC Infra.
 
 provider "aws" {
-  region = "us-west-2"  # Specify your AWS region here
+  region = "ap-south-1"  # Specify your AWS region here
 }
 
 
@@ -30,7 +30,7 @@ resource "aws_vpc" "example" {
 resource "aws_subnet" "example" {
   vpc_id            = aws_vpc.example.id
   cidr_block        = "172.16.10.0/24"
-  availability_zone = "us-west-2a"
+  availability_zone = "ap-south-1a"
 
   tags = {
     Name = "tf-example"
